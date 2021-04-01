@@ -1,5 +1,51 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+}
+
+.card{
+  box-shadow: rgb(94 89 77 / 10%) 0px 8px 20px -2px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+
+.v-center{
+  display: flex;
+  align-items: center;
+}
+
+.v-baseline{
+  display: flex;
+  align-items: baseline;
+}
+
+.break-word{
+  white-space: break-spaces;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .responsive-text-center{
+    text-align: center;
+  }
+  .resp-element-center{
+    display:flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .responsive-text-center{
+    text-align: center;
+  }
+  .resp-element-center{
+    display:flex;
+    justify-content: center;
+  }
+}
+
+.content__sub{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .App-logo {
