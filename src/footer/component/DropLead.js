@@ -15,18 +15,16 @@ class DropLead extends React.Component{
                             Abonniere unseren Newsletter
                             für wöchentliche Gesundheitstipps
                         </Title>
-
-                            <Row className="justify-content-center">
-                                <Col sm={6} xs={12} className="pt-4">
-                                    <Input placeholder="Deine E-Mail-Adresse" type="text"/>
-                                </Col>
-                                <Col sm={6} xs={12} className="resp-element-center">
-                                    <BtnBlack className="py-2 mt-4">
-                                        ABONNIEREN
-                                    </BtnBlack>
-                                </Col>
-                            </Row>
-                 
+                        <Row className="justify-content-center">
+                            <Col sm={6} xs={12} className="pt-4">
+                                <Input placeholder="Deine E-Mail-Adresse" type="text"/>
+                            </Col>
+                            <Col sm={6} xs={12} className="resp-element-center">
+                                <BtnBlack className="py-2 mt-4">
+                                    ABONNIEREN
+                                </BtnBlack>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Section>
