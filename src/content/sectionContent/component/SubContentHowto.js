@@ -1,16 +1,18 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import styled from "styled-components";
+import '../../../App';
+import device from "../../../devices/device";
 
 class SubContentHowto extends React.Component{
     render(){
         return (
             <Padding>
                 <Row>
-                    <Col>
+                    <Col lg={6} xs={10} className="resp-element-center">
                         <img src="images/HowtoMobile.png" alt="HowtoMobile"/>
                     </Col>
-                    <Col>
+                    <Col lg={6} xs={11}>
                         <Title>
                             Der arbotena Test - so funktioniert’s
                         </Title>
@@ -78,6 +80,10 @@ class SubContentHowto extends React.Component{
 
 const Padding = styled.div`
     padding: 3rem 9rem;
+
+    @media ${device.mobile} {
+        padding: 3rem 5rem;
+    }
 `
 
 const Title = styled.div`

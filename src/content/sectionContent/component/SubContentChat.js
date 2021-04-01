@@ -11,7 +11,7 @@ class SubContentChat extends React.Component{
                     <img src="icons/icons8_quote.png" alt="talk" width="80px"/>
                 </Quote>
                 <Row className="justify-content-center">
-                    <Col md={6}>
+                    <Col md={6} xs={10}>
                         <Detail>
                             Eine rein symptomorientierte Behandlung ist out! 
                             Vielmehr versuchen wir mit dem Patienten gemeinsam 

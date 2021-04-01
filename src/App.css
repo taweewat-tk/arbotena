@@ -18,6 +18,31 @@
   align-items: baseline;
 }
 
+.break-word{
+  white-space: break-spaces;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .responsive-text-center{
+    text-align: center;
+  }
+  .resp-element-center{
+    display:flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .responsive-text-center{
+    text-align: center;
+  }
+  .resp-element-center{
+    display:flex;
+    justify-content: center;
+  }
+}
+
 .content__sub{
   padding-top: 6rem;
   padding-bottom: 6rem;

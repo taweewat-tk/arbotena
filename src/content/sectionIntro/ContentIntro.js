@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import device from "../../devices/device";
 
 class ContentIntro extends React.Component{
     render(){
@@ -35,6 +36,10 @@ class ContentIntro extends React.Component{
 const ContentArea = styled.div`
     padding-top:10rem;
     max-width: 516px;
+
+    @media ${device.mobile} {
+        padding-top:3rem;
+    }
 `
 
 const Title = styled.div`

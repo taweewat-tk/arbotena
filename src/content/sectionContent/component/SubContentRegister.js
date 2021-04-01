@@ -6,7 +6,7 @@ class SubContentRegister extends React.Component{
     render(){
         return (
             <Row className="justify-content-center text-center content__sub">
-                <Col md={6}>
+                <Col md={6} xs={10}>
                     <Title>
                         Entdecke jetzt deine Nahrungsmittelunverträglichkeiten!
                     </Title>
@@ -28,6 +28,8 @@ const Title = styled.div`
     font-weight: 300;
     line-height: 47px;
     color: rgb(28, 30, 33);
+    white-space: break-spaces;
+    word-break: break-word;
 `
 
 const BtnBlack = styled.button`

@@ -1,33 +1,35 @@
 import React from "react";
+import { Col, Row } from "react-bootstrap";
 import styled from "styled-components";
+import device from "../../../devices/device";
 
 class SubContentMain extends React.Component{
     render(){
         return (
             <div className="d-flex justify-content-between">
-                <Padding>
-                    <Title>
-                        Habe ich eine Nahrungsmittelunverträglichkeit?
-                    </Title>
-                    <SubTitle className="pt-1">
-                        Was kann ich dagegen tun?
-                    </SubTitle>
-                    <Detail className="pt-3">
-                        Magen-Darm-Beschwerden, Kopfschmerzen, Hautprobleme? 
-                        Dahinter kann die Ernährung – und eine 
-                        <DetailLink>Nahrungsmittelunverträglichkeit</DetailLink> – stecken. 
-                        Mit <DetailLink>arbotena, dem digitalen Schnell-Test</DetailLink>, 
-                        kannst du prüfen, ob das vielleicht auch 
-                        bei dir der Fall ist. Der arbotena-Test analysiert 
-                        datenbasiert Symptome von Menschen und kann dadurch 
-                        Rückschlüsse auf Unverträglichkeiten von 
-                        Nahrungsmitteln ziehen. Das Ganze funktioniert 
-                        mithilfe eines digitalen Anamnesebogens. 
-                        Innerhalb von wenigen Minuten erhältst du dein 
-                        persönliches Ergebnis.
-                    </Detail>
-                </Padding>
-                <img src="images/Pic_Arbotena.png" alt="arbotena"/>
+                    <Padding>
+                        <Title>
+                            Habe ich eine Nahrungsmittelunverträglichkeit?
+                        </Title>
+                        <SubTitle className="pt-1">
+                            Was kann ich dagegen tun?
+                        </SubTitle>
+                        <Detail className="pt-3">
+                            Magen-Darm-Beschwerden, Kopfschmerzen, Hautprobleme? 
+                            Dahinter kann die Ernährung – und eine 
+                            <DetailLink>Nahrungsmittelunverträglichkeit</DetailLink> – stecken. 
+                            Mit <DetailLink>arbotena, dem digitalen Schnell-Test</DetailLink>, 
+                            kannst du prüfen, ob das vielleicht auch 
+                            bei dir der Fall ist. Der arbotena-Test analysiert 
+                            datenbasiert Symptome von Menschen und kann dadurch 
+                            Rückschlüsse auf Unverträglichkeiten von 
+                            Nahrungsmitteln ziehen. Das Ganze funktioniert 
+                            mithilfe eines digitalen Anamnesebogens. 
+                            Innerhalb von wenigen Minuten erhältst du dein 
+                            persönliches Ergebnis.
+                        </Detail>
+                    </Padding>
+                    <Img src="images/Pic_Arbotena.png" alt="arbotena" width="100%"/>
             </div>
         )
     }
@@ -35,6 +37,24 @@ class SubContentMain extends React.Component{
 
 const Padding = styled.div`
     padding: 3rem 9rem;
+
+    @media ${device.tablet} {
+        padding: 3rem 5rem;
+    }
+
+    @media ${device.mobile} {
+        padding: 2rem;
+    }
+`
+
+const Img = styled.img`
+    @media (min-width: 768px) and (max-width: 992px) {
+        display:none;
+    }
+
+    @media ${device.mobile} {
+        display:none;
+    }
 `
 
 const Title = styled.div`

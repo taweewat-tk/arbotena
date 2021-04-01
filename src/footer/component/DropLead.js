@@ -7,7 +7,7 @@ class DropLead extends React.Component{
         return (
             <Section>
                 <Row className="justify-content-center">
-                    <Col md={6}>
+                    <Col md={6} xs={10}>
                         <div className="d-flex justify-content-center pb-4">
                             <img src="images/Logo.png" alt="logo"/>
                         </div>
@@ -15,12 +15,18 @@ class DropLead extends React.Component{
                             Abonniere unseren Newsletter
                             für wöchentliche Gesundheitstipps
                         </Title>
-                        <div className="d-flex justify-content-center pt-4">
-                            <Input placeholder="Deine E-Mail-Adresse" type="text"/>
-                            <BtnBlack className="py-2 ml-4">
-                                ABONNIEREN
-                            </BtnBlack>
-                        </div>
+
+                            <Row className="justify-content-center">
+                                <Col sm={6} xs={12} className="pt-4">
+                                    <Input placeholder="Deine E-Mail-Adresse" type="text"/>
+                                </Col>
+                                <Col sm={6} xs={12} className="resp-element-center">
+                                    <BtnBlack className="py-2 mt-4">
+                                        ABONNIEREN
+                                    </BtnBlack>
+                                </Col>
+                            </Row>
+                 
                     </Col>
                 </Row>
             </Section>
@@ -33,6 +39,7 @@ const Section = styled.div`
 `
 
 const Input = styled.input`
+    height: 100%;
     font-size: 17px;
     font-weight: 300;
     line-height: 20px;
