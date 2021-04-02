@@ -42,7 +42,7 @@ const Padding = styled.div`
     }
 
     @media ${device.mobile} {
-        padding: 2rem;
+        padding: 1rem;
     }
 `
 
