@@ -20,7 +20,7 @@ class SubContentChat extends React.Component{
                             damit er mit hoher Lebensqualität gesund alt werden kann.
                             <div className="pt-4 v-center">
                                 <div className="d-flex justify-content-center">
-                                    <img src="images/Ellipse_103.png" alt="profile" width="84px" />
+                                    <Img src="images/Ellipse_103.png" alt="profile" width="100%" />
                                 </div>
                                 <div className="pl-4">
                                     <Title>
@@ -38,6 +38,10 @@ class SubContentChat extends React.Component{
         )
     }
 }
+
+const Img = styled.img`
+    max-width: 100px;
+`
 
 const Quote = styled.div`
     padding-top: 2rem;
