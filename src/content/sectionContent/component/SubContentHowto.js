@@ -10,9 +10,9 @@ class SubContentHowto extends React.Component{
             <Padding>
                 <Row>
                     <Col lg={6} xs={10} className="resp-element-center">
-                        <img src="images/HowtoMobile.png" alt="HowtoMobile"/>
+                        <Img src="images/HowtoMobile.png" alt="HowtoMobile"/>
                     </Col>
-                    <Col lg={6} xs={11}>
+                    <Col lg={6} xs={12}>
                         <Title>
                             Der arbotena Test - so funktioniert’s
                         </Title>
@@ -77,6 +77,10 @@ class SubContentHowto extends React.Component{
         )
     }
 }
+
+const Img =styled.img`
+    max-height: 486px;
+`
 
 const Padding = styled.div`
     padding: 3rem 9rem;
