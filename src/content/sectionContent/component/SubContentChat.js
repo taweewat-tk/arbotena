@@ -18,19 +18,19 @@ class SubContentChat extends React.Component{
                             die Ursache seiner Beschwerden zu finden und erstellen 
                             ein individuelles, präventives Gesundheitskonzept, 
                             damit er mit hoher Lebensqualität gesund alt werden kann.
-                            <div className="pt-4 v-center">
-                                <div className="d-flex justify-content-center">
+                            <Row className="pt-4 v-center">
+                                <Col xs={3} className="d-flex justify-content-center">
                                     <Img src="images/Ellipse_103.png" alt="profile" width="100%" />
-                                </div>
-                                <div className="pl-4">
+                                </Col>
+                                <Col xs={9} className="pl-3">
                                     <Title>
                                         Dr. med. Hans-Joachim Petersohn
                                     </Title>
                                     <SubTitle>
                                         Der Leiter des Gesundheitsinstitus „Salutomed“
                                     </SubTitle>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
                         </Detail>
                     </Col>
                 </Row>
