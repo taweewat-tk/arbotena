@@ -19,10 +19,10 @@ class SubContentChat extends React.Component{
                             ein individuelles, präventives Gesundheitskonzept, 
                             damit er mit hoher Lebensqualität gesund alt werden kann.
                             <Row className="pt-4 v-center">
-                                <Col xs={3} className="d-flex justify-content-center">
-                                    <Img src="images/Ellipse_103.png" alt="profile" width="100%" />
+                                <Col xs={4} className="d-flex justify-content-center">
+                                    <Img src="images/Ellipse_103.png" alt="profile" width="100%" height="100%"/>
                                 </Col>
-                                <Col xs={9} className="pl-3">
+                                <Col xs={8} className="pl-3">
                                     <Title>
                                         Dr. med. Hans-Joachim Petersohn
                                     </Title>
@@ -41,6 +41,7 @@ class SubContentChat extends React.Component{
 
 const Img = styled.img`
     max-width: 100px;
+    max-height: 100px;
 `
 
 const Quote = styled.div`

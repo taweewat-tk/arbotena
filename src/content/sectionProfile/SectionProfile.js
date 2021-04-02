@@ -35,6 +35,8 @@ const Section = styled.div`
 
 const Img = styled.img`
     max-width: 250px;
+    max-height: 250px;
+
 `
 
 export default SectionProfile
