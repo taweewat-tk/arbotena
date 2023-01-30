@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && pagecrypt public/index.html build/index.html s3cr3t",
+    "build": "pagecrypt public/index.html build/index.html s3cr3t && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
