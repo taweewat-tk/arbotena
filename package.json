@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm i && react-scripts build",
+    "build": "react-scripts build",
     "postbuild": "pagecrypt public/index.html build/index.html s3cr3t",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,9 +40,9 @@
     ]
   },
   "engines": {
-    "node": ">=16 <19"
+    "node": ">=16 <17"
   },
   "devDependencies": {
-    "pagecrypt": "^5.3.0"
+    "pagecrypt": "^6.0.1"
   }
 }
