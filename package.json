@@ -17,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "pagecrypt public/index.html build/encrypted.html s3cr3t",
+    "postbuild": "pagecrypt index.html encrypted.html s3cr3t",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
