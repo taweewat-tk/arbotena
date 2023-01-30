@@ -17,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "pagecrypt public/index.html dist/index.html s3cr3t",
+    "postbuild": "pagecrypt build/index.html build/encrypted.html s3cr3t",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "pagecrypt": "^6.0.1"
+    "pagecrypt": "^5.0.0"
   }
 }
